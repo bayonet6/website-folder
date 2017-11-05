@@ -1,0 +1,160 @@
+body {
+  font-family: 'Abel';
+  text-align: center;
+}
+
+hr {
+  width: 60%;
+  border-color: rgba(#adadad, 0.9)
+}
+
+#header{
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+#header p {
+  color: #8c8c8c;
+  font-size: 20px;
+}
+
+#header p, h1 {
+  text-align: left;
+  padding-left: 150px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#links a{
+  text-align:center;
+  font-size: 20px;
+  text-decoration:none;
+  margin: 50px;
+  color: black;
+}
+
+#links i{
+  vertical-align: middle;
+  color: black;
+  text-align:center;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #31bf0d;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+#about h4, #bio h4, #blog h4 {
+  text-align:center;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+#about{
+  text-align:center;
+  width: 100%
+}
+
+#about a {
+  text-decoration: none;
+  color: #31bf0d;
+}
+
+#about a:hover{
+  text-decoration: underline;
+}
+
+#about p{
+  margin: auto;
+  text-align:center;
+  width: 50%;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  font-size: 20px;
+}
+
+#bio {
+  padding-bottom: 10px;
+}
+
+#bio ul {
+  list-style-type: none;
+  padding-left:30%;
+  text-align: left;
+  width: 60%
+}
+
+#bio li{
+  padding-top:5px;
+  padding-bottom:5px;
+  font-size: 20px;
+}
+
+#bio li:before{
+  /*content uses unicode in order to insert a space*/
+  content: ">_ \00a0 ";
+  font-size: 20px;
+  font-weight: bold;
+  color: #31bf0d;
+}
+
+#blog {
+  width:60%;
+  overflow-y: scroll;
+  height: 250px;
+  border: 0px;
+  margin-left: 20%;
+  text-align:left;
+}
+
+#entry1 h4, #entry2 h4, #entry3 h4{
+  text-align:left;
+  font-size: 20px;
+  font-weight: 400;
+  color: #a2a2a2;
+}
+
+#entry1 h5, #entry2 h5, #entry3 h5{
+  text-align: left;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  color: #31bf0d;
+}

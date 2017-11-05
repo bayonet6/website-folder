@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head block html-->
+<div w3-include-html="head.html"></div>
+<!--Must include this script!-->
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+	}
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	}
+	w3.includeHTML();
+</script>
+<body>
+  <!--Sidebar Html-->
+  <div w3-include-html="sidenav.html"></div>
+  <!--Header Html-->
+  <div w3-include-html="header.html"></div>
+	<!--horizontal line break-->
+  <hr>
+  <!--Bio section-->
+  <div id="bio">
+    <h4>Bio</h4>
+    <ul>
+      <li>From the great state of Oregon.</li>
+      <li>Passion for all things computers and electronics, hardware and software.</li>
+      <li>Compete with my cadet company Sandhurst team.</li>
+    </ul>
+  </div>
+  <!--horizontal line break-->
+  <hr>
+  <!--Links Html-->
+  <div w3-include-html="links.html"></div>
+</body>
+</html>

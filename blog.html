@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head block html-->
+<div w3-include-html="head.html"></div>
+<!--Must include this script!-->
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+  function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  w3.includeHTML();
+  /*Retrieve data from JSON file*/
+  w3.getHttpObject("blog.json", postEntries);
+  function postEntries(data) {
+    w3.displayObject("blog", data);
+  }
+</script>
+<body>
+  <!--Sidebar Html-->
+  <div w3-include-html="sidenav.html"></div>
+  <!--Header Html-->
+  <div w3-include-html="header.html"></div>
+  <!--horizontal line break-->
+  <hr>
+  <!--Blog-->
+  <div id="blog">
+    <h4>Blog</h4>
+    <div id = "entry3">
+      <h4>{{date3}}</h4>
+      <h5>{{title3}}</h5>
+      <p>{{text3}}</p>
+    </div>
+    <br>
+    <div id = "entry2">
+      <h4>{{date2}}</h4>
+      <h5>{{title2}}</h5>
+      <p>{{text2}}</p>
+    </div>
+    <br>
+    <div id = "entry1">
+      <h4>{{date1}}</h4>
+      <h5>{{title1}}</h5>
+      <p>{{text1}}</p>
+    </div>
+  </div>
+  <!--horizontal line break-->
+  <hr>
+  <!--Links Html-->
+  <div w3-include-html="links.html"></div>
+</body>
+</html>

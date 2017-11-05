@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Head block html-->
+<div w3-include-html="head.html"></div>
+<!--Must include this script!-->
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<script>
+	function openNav() {
+		document.getElementById("mySidenav").style.width = "250px";
+	}
+	function closeNav() {
+		document.getElementById("mySidenav").style.width = "0";
+	}
+	w3.includeHTML();
+</script>
+<body>
+  <!--Sidebar Html-->
+  <div w3-include-html="sidenav.html"></div>
+  <!--Header Html-->
+  <div w3-include-html="header.html"></div>
+	<!--horizontal line break-->
+  <hr>
+	<!--My about me section-->
+  <div id="about">
+    <h4>About Me</h4>
+    <p>Hello! I am a Cadet at the United States Military Academy, a Computer Science Major with a Cyber Security minor, and member of the Cadet Competitive Cyber Team (<a href="http://www.usma.edu/crc/sitepages/c3t.aspx">C3T</a>). In the future, I look towards
+      serving as an infantry officer and eventually transitioning into the US Army Cyber Corps. I greatly enjoy programming and machine exploitation. I also enjoy experimenting with both back-end and front-end development as
+      well as writing custom command-line scripts.</p>
+  </div>
+	<!--horizontal line break-->
+	<hr>
+  <!--Links Html-->
+  <div w3-include-html="links.html"></div>
+</body>
+</html>
